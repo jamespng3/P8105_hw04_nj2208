@@ -1,14 +1,110 @@
 ---
-title: "Resume"
+title: "CV"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
+### EDUCATION	
+<p>
+University of Rochester	Rochester, NY <span style ="float:right">September 2004-May 2008 </span>  <br>
+Bachelor of Science, Biomedical Engineering	<br>
+* Concentration: Cell and Tissue Engineering
+<br></p>
 
-# This is my boring website for class
+### Laboratory Experience
 
+Columbia University Mailman School of Public Health	New York,NY<br>
+Center for Infection and Immunity	<br>
+* Staff Associate             <span style ="float:right">June 2016 - Present</span>
+<br>
+* Technician B <span style ="float:right">Jan 2010 - June 2016</span><br>
+* Technician A <span style ="float:right">April 2009 - Jan 2010</span><br>
 
+### Laboratory Skills	
+
+Nucleic acid extraction from various tissue types and cDNA synthesis 
+PCR, SDS-PAGE and agarose gels
+Purification of PCR products and proteins
+Molecular Cloning
+In-Situ hybridization/Immunohistochemistry
+LIPS (Luciferase Immunoprecipitation) Assay
+Western Blot
+Northern Blot
+Southern Blot
+Transfections of cells with PCR generated constructs
+Maintenance and oversight of the UGenius gel imager and UV boxes
+Maintenance and operational oversight of the easyMAG nucleic acid extraction machine
+Maintenance and operational oversight of the BDMax
+Laboratory waste management
+Able to write standard operating procedures 
+Able to use Geneious for genomic sequence analysis and primer design
+BSL-3 access and Select Agents Program Approval
+ 
+### PROJECTS	
+
+Acute Encephalitis Syndrome (AES) outbreak in the Uttar Pradesh province of India (2017-present)
+*Process samples on site in Gorakhpur India for molecular and serological tests
+*Analyzed sequencing data to identify pathogenic agents that may be a probable cause of AES
+*Analyze serological data to determine positive and negative thresholds for probably agents and define samples as positive or negative for said agent
+Analyze collected data to find links between case outcomes, molecular data and serological data
+
+CII ArboViroPlex Assay FDA EUA (2016-2017)
+*Develop, multiplex and optimization of an RTqPCR assay to accurately detect Zika virus, Dengue virus, West Nile virus and Chikungunya virus 
+*Generate RNA constructs for standards
+*Grow and extract cell culture supernatants for limit of detection tests
+*Help write up and submit an FDA EUA 
+*Process FDA packet to validate assay with samples which we did not know what the results should be.
+
+MERS Surveillance of Camels in Riyahd, Saudi Arabia (August 2016)	
+*Extract several hundred samples in two weeks on location in Riyahd, Saudi Arabia
+*Process samples for RTqPCR in duplicates.
+*Record results and send to supervisor for final analysis
+
+Pathology of Diseased Tilapia with unknown infectious agent (2015-2016)
+*Preparation of samples for unbiased HTS
+*Analysis of HTS data to identify and sequence infectious agent
+*Designing constructs for northern blot assay
+*In-situ hybridization of paraffin embedded slides using probes designed from HTS data
+
+West African Multiplex Assay (2014-2015)
+*Testing multiplex PCR assay mixes on the BD Max machine
+*Testing compatibility of various sample types on the BD Max machine
+*Program adjustments to optimize signal output 
+ 
+Pathogen burden of Rats in NYC (2013-2014)
+*Extraction of various tissue types and prepping samples for unbiased high-throughput sequencing 
+*Analyzing high-throughput data
+ 
+
+### PUBLICATIONS	
+
+Nischay Mishra; Shamsudeen F. Fagbo; Abdulaziz N. Alagaili; Adam Nitido; Simon H Williams; James Ng; Bohyun Lee; Abdulkareem Durosinloun; Joel A Garcia; Komal Jain; Vishal Kapoor; Jon H Epstein; Thomas Briese; Ziad A Memish; Kevin J Olival; W Ian Lipkin. A viral metagenomic survey identifies known and novel mammalian viruses in bats from Saudi Arabia. PLOS ONE (in-press) 09/2018. 
+ 
+Thiago Souza, Yasmine Rangel Vieira, Edson Delatorre, Giselle Barbosa-Lima, Raul Leal Faria Luiz, Alexandre Vizzoni, Komal Jain, Milene Mesquita, Nishit Bhuva, Jan F. Gogarten, James Ng, Riddhi Thakkar, Andrea Surrage Calheiros, Ana Paula Teixeira Monteiro, Patricia T Bozza, Fernando A Bozza, Diogo A Tschoeke, Luciana Leomil, Marcos Cesar Lima de Mendonca, Cintia Damasceno dos Santos Rodrigues, Maria C Torres, Ana Maria Bispo de Filippis, Rita Maria Ribeiro Nogueira, Fabiano L. Thompson, Cristina Lemos, Betina Durovni, Jose Cerbino-Neto, Carlos M Morel, Ian Lipkin, Nischay Mishra. Emergence of the East-Central-South-African genotype of Chikungunya virus in Brazil and the city of Rio de Janeiro may have occurred years before surveillance detection. 21 Dec 2018, bioRxiv, doi: https://doi.org/10.1101/502443.
+
+Mishra N, Caciula A, Price A, Thakkar R, Ng J, Chauhan L. V, Jain K, Che X, Espinosa D. A, Montoya Cruz M, Balmaseda A, Sullivan E. H, Patel  J. J, Jarman R. G, Rakeman J. L, Egan C. T, Reusken C, Koopmans M, Harris E, Tokarz R, Briese T, Lipkin W. I. (2018). Diagnosis of Zika Virus Infection by Peptide Array and Enzyme-Linked Immunosorbent Assay. mBio, 9(2), e00095-18. doi:10.1128/mBio.00095-18
+
+Bacharach E, Mishra N, Briese T, Zody MC, Kembou Tsofack JE, Zamostiano R, Berkowitz A, Ng J, Nitido A, Corvelo A, Toussaint NC, Abel Nielsen SC, Hornig M, Del Pozo J, Bloom T, Ferguson H, Eldar A, Lipkin WI. Characterization of a Novel Orthomyxo-like Virus Causing Mass Die-Offs of Tilapia. MBio. 2016 Apr 5;7(2). pii: e00431-16. doi: 10.1128/mBio.00431-16
+
+Firth C, Bhat M, Firth MA, Williams SH, Frye MJ, Simmonds P, Conte JM, Ng J, Garcia J, Bhuva NP, Lee B, Che X, Quan PL, Lipkin WI. Detection of zoonotic pathogens and characterization of novel viruses carried by commensal Rattus norvegicus in New York City. MBio. 2014 Oct 14;5(5):e01933-14. doi: 10.1128/mBio.01933-14 
+
+OTHER SKILLS	•	Able to use Microsoft Office including Microsoft Word, Microsoft Power Point, Microsoft Excel and Microsoft Outlook
+	•	Able to use Adobe Photoshop 
+	•	Able to analyze, prepare and present data to peers
+	•	Fluent In Cantonese
+	•	Able to input data into LIMS 
+	•	Basic coding in RStudio
+
+CERTIFICATES	•	Blood borne pathogen safety
+	•	Laboratory Hazardous Waste Safety
+	•	Use of Formaldehyde safety
+	•	Recombinant DNA training
+	•	Biosafety Viral vector training
+	•	HIPAA training
+	•	Human subjects protection training 
+ 
+REFERENCES	References available upon request
 
 
 
