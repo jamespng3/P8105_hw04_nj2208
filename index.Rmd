@@ -1,25 +1,22 @@
 ---
 title: "My Website For HW 04"
-author: "James Ng"
-date: "10/28/2019"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
-
-# This is Jimmys website 
-
-off to [page2](about.html)
+<p>
+Hi! You have found my webpage. This page was made as part of homework 04 for P8105 at Columbia University. Have a look around and see some of the stuff i have done in the past.
 
 
+Mostly a lot of this:
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+<img src="images/7500-Dye.jpg" style="width:75%" >
 
-#
 
-I often use [google](https://google.com) todo **data science**
+And remember, it's dangerous to go alone. <br>
+Take this!!
 
-### Let's add image
+<img src="images/triforce.jpg" style="width:50%" >
 
-![](7500-Dye.jpg)
+</p>

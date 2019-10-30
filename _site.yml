@@ -1,0 +1,20 @@
+name: "Yay internet"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "Resume"
+      href: about.html
+    - text: "Plots"
+      menu:
+      - text: "Plotly"
+        href: plotly.html
+      - text: "Dashboard"
+        href: dashboard.html
+    - icon: fa-envelope fa-lg
+      href: mailto:nj2208@cumc.columbia.edu
+    - icon: fa-github fa-lg
+      href: http://github.com/jamespng3/
+output:
+  html_document:
+    theme: cerulean
