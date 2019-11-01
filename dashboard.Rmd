@@ -28,18 +28,14 @@ nyc_abnb =
     neighbourhood_group, neighbourhood, rating, price, room_type, lat, long) %>%
   filter(
     !is.na(rating), 
-    neighbourhood_group == "Manhattan",
-    room_type == "Entire home/apt",
-    price %in% 100:500)  %>% 
-  sample_n(5000)
-
+    neighbourhood_group == "Bronx"
+  )
 ```
 
 Column {data-width=650}
 -----------------------------------------------------------------------
 
 ### Chart A
-
 
 ```{r}
 nyc_abnb %>%
@@ -58,20 +54,31 @@ Column {data-width=350}
 
 ```{r}
 nyc_abnb %>% 
-  mutate(neighbourhood=fct_reorder(neighbourhood,price)) %>% 
-  plot_ly(
-    y = ~price, type = "box", mode = "markers",
-    color = ~neighbourhood)
-
+  count(neighbourhood) %>% 
+  mutate(neighbourhood = fct_reorder(neighbourhood, n)) %>% 
+  plot_ly(x = ~neighbourhood, y = ~n, color = ~neighbourhood, type = "bar")
 ```
 
 ### Chart C
 
 ```{r}
-nyc_abnb %>% 
-  count(neighbourhood) %>% 
-  mutate(neighbourhood = fct_reorder(neighbourhood, n)) %>% 
-  plot_ly(x = ~neighbourhood, y = ~n, color = ~neighbourhood, type = "bar")
+data("rest_inspec")
 
+bx_rest=rest_inspec %>% 
+  filter(
+    boro=="BRONX",
+    cuisine_description="Chinese") %>% 
+  mutate(
+    total=fct_reorder()
+  )
+  
+bx_rest %>% 
+  ggplot(aes(x=cuisine_description,y=total))+
+  geom_col()+
+  coord_flip(xlim = NULL, ylim = NULL, expand = TRUE, clip = "on")
+bx_rest %>% 
+  plot_ly(
+    x = ~cuisine_description, y = ~total, type = "bar", mode = "markers",
+    color = ~total, text = ~cuisine_description, alpha = 0.5)
 ```
 
