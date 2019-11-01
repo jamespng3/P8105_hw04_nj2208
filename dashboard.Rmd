@@ -1,5 +1,5 @@
 ---
-title: "Dashboard"
+title: "Dashboard - Various graphs regarding chinese restaurants in NYC"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
