@@ -20,16 +20,15 @@ library(plotly)
 ```{r}
 set.seed(1)
 
-data(nyc_airbnb)
-nyc_abnb = 
-  nyc_airbnb %>% 
-  mutate(rating = review_scores_location / 2) %>%
-  select(
-    neighbourhood_group, neighbourhood, rating, price, room_type, lat, long) %>%
+data("rest_inspec")
+
+rest=rest_inspec %>%
+  filter(grade %in% c("A", "B", "C"), boro != "Missing") %>% 
+  mutate(boro = str_to_title(boro))
+chin=rest %>%   
   filter(
-    !is.na(rating), 
-    neighbourhood_group == "Bronx"
-  )
+    cuisine_description=="Chinese")
+  
 ```
 
 Column {data-width=650}
@@ -38,12 +37,11 @@ Column {data-width=650}
 ### Chart A
 
 ```{r}
-nyc_abnb %>%
-  mutate(text_label = str_c("Price: $", price, '\nRating: ', rating)) %>% 
+chin %>% 
+  group_by(violation_code,boro) %>% 
   plot_ly(
-    x = ~lat, y = ~long, type = "scatter", mode = "markers",
-    color = ~price, text = ~text_label, alpha = 0.5)
-
+    x = ~violation_code, type = "scatter", mode = "markers",
+    color = ~boro, text = ~boro, alpha = 0.5)
 ```
 
 
@@ -53,32 +51,18 @@ Column {data-width=350}
 ### Chart B
 
 ```{r}
-nyc_abnb %>% 
-  count(neighbourhood) %>% 
-  mutate(neighbourhood = fct_reorder(neighbourhood, n)) %>% 
-  plot_ly(x = ~neighbourhood, y = ~n, color = ~neighbourhood, type = "bar")
+chin %>%   
+  filter(boro=="Bronx") %>% 
+  count(zipcode) %>% 
+  mutate(zipcode=as.character(zipcode)) %>% 
+  plot_ly(x = ~zipcode, y = ~n, color = ~zipcode, type = "bar")
 ```
 
 ### Chart C
 
 ```{r}
-data("rest_inspec")
-
-bx_rest=rest_inspec %>% 
-  filter(
-    boro=="BRONX",
-    cuisine_description="Chinese") %>% 
-  mutate(
-    total=fct_reorder()
-  )
-  
-bx_rest %>% 
-  ggplot(aes(x=cuisine_description,y=total))+
-  geom_col()+
-  coord_flip(xlim = NULL, ylim = NULL, expand = TRUE, clip = "on")
-bx_rest %>% 
-  plot_ly(
-    x = ~cuisine_description, y = ~total, type = "bar", mode = "markers",
-    color = ~total, text = ~cuisine_description, alpha = 0.5)
+chin %>%   
+  plot_ly(y = ~score, color = ~boro, type = "box",
+          colors = "Set2")
 ```
 
